@@ -61,11 +61,11 @@
         //距离某一天的时间
         var a = new Date('2020-9-17');
         var b = new Date();
-        var c = (a - b) / (1000 * 60 * 60 * 24);
+        var c = (b - a) / (1000 * 60 * 60 * 24);
         alert(c);
         var Check_first_time_we_met = '';
-        var First_Time = Math.floor(-c);
-        var ggg = 888.6681004166667;
+        var First_Time = Math.floor(c);
+        var ggg = -888.6681004166667;
         alert(ggg);
         alert(typeof(First_Time));
         alert(First_Time);
