@@ -62,15 +62,12 @@
         var a = new Date('2020-9-17');
         var b = new Date();
         var c = (b - a) / (1000 * 60 * 60 * 24);
-        alert(c);
         var Check_first_time_we_met = '';
         var First_Time = Math.floor(c);
-        var ggg = -888.6681004166667;
-        alert(ggg);
-        alert(typeof(First_Time));
-        alert(First_Time);
+        
         console.log("在一起 ", First_Time, " 天了");//Math.floor向下取整取整数
-
+        if (isNaN(First_Time) != True){
+            
         while (Check_first_time_we_met != '输入正确') {
 
             var input_num = prompt('我们在一起多少天了？');
@@ -110,6 +107,7 @@
                 ++time;
 
             }
+        }
         }
         alert("接下里才是见真章的时候咯～只有答对了才能继续下去");
 
