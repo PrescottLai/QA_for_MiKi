@@ -96,10 +96,13 @@
                 if (time == 5) {
                     alert("哎，算了，我告诉你吧，是 " + First_Time + " 天啦");
                 }
-                if (time > 5) {
+                if (time == 6) {
                     alert("不是吧，看着答案都能错..激动的手抖吗？ " + First_Time + " 天啦！");
                 }
-
+                if (time == 7){
+                    alert("算了，这题不问了，下一题!");
+                    Check_first_time_we_met = '输入正确';
+                }
                 ++time;
 
             }
